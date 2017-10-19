@@ -1,0 +1,333 @@
+/*
+        Author: TheMysticDark
+        Credits: CHIMERA
+*/
+
+/*=^.^=|=^.^=|=^.^=|=^.^=|=^.^=|=^.^=|=^.^=
+        KEEP THES FILE ORGANISED
+        IT EASYLY GETS 400+ LINES
+=^.^=|=^.^=|=^.^=|=^.^=|=^.^=|=^.^=*|=^.^=/
+
+/*==================================
+    start   general style
+==================================*/
+
+header, main, footer, article, nav, section, aside{
+    display: block;
+}
+
+html, body{
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+}
+
+body{
+    background-color: #404040;
+    height: auto;
+    width: auto;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #134082;
+}
+
+#button, #sendButton{
+    background: transparent;
+    border: 1px solid #9932cc;
+    border-radius: 2px;
+}
+
+#preDump{
+
+}
+
+#preDumpDesc{
+    color: #ff0000;
+    font-size: 15px;
+}
+
+#varDump{
+    color: #00ff39;
+    font-size: 13px;
+}
+
+/*==================================
+    end	general style
+----------------------------------
+    start header style
+==================================*/
+
+
+
+/*==================================
+    end	header style
+----------------------------------
+    start main style
+==================================*/
+
+main{
+
+}
+
+/*==================================
+    end	main style
+----------------------------------
+    start HTML Output style
+==================================*/
+
+#statisticOutput{
+    width: 80%;
+    float: left;
+    margin: 10px;
+}
+
+#extras{
+    width: 45%;
+    float: right;
+    margin: 10px;
+}
+
+#statistic{
+    width: 100%;
+    min-width: 50%;
+    border: 1px solid white;
+}
+
+#tableSpanName th, #tableSpanName td{
+    color: #00ceff !important;
+    font-size: x-large;
+}
+
+#statistic tr{
+    height: 1.8em;
+}
+
+#statistic th{
+    color: #00ff39;
+    padding: 0 1%;
+    text-align: left;
+    width: 50%;
+    border: 1px solid white;
+}
+
+#statistic td{
+    color: #ff0000;
+    padding: 0 1%;
+    border: 1px solid white;
+}
+
+.fileName{
+    font-weight: 900;
+    color: #ff9b00 !important;
+}
+
+#tableName{
+    color: #ffff00 !important;
+    text-align: center !important;
+    font-size: 25px;
+    margin: 0.2%;
+}
+
+#statistic #on{
+    color: #ff0000 !important;
+}
+
+#statistic #off{
+    color: #ffffff !important;
+}
+
+#msg{
+    color: #ffff00;
+    font-size: 25px;
+    margin: 0.2%;
+}
+
+.activateHint{
+    float: right;
+    position: relative;
+    cursor: pointer;
+    color: white;
+}
+
+.activateHint:hover .hint {
+    display: block;
+}
+
+.activateHint .hint {
+    cursor: default;
+    display: none;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #848484;
+    padding: 10px;
+    width: 20vw;
+    top: 0px;
+    z-index: 1;
+    left: 150%;
+    color: #000000;
+}
+
+/*==================================
+    end	HTML Output style
+----------------------------------
+    start controls style
+==================================*/
+
+#controlPanel{
+    width: 100%;
+    min-width: 50%;
+    float: right;
+    margin: 0;
+}
+
+#controlPanel .name{
+    font-weight: 900;
+    color: #ff9b00;
+    font-size: large;
+    float: left;
+    margin: 0 2.5em 0 0;
+}
+
+#controlPanel td{
+    margin: 1.1%;
+    padding: 0.2em;
+    color: #ff0000;
+    width: 60%;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    display:none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.downloadButton, .downloadButtonDisabled {
+    border-radius: 4px;
+    background-color: #404040;;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 13px;
+    padding: 5px 0;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.downloadButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.downloadButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.downloadButton:hover span {
+    padding-right: 25px;
+}
+
+.downloadButton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.downloadButtonDisabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.downloadButton, .downloadButtonDisabled{
+    text-decoration: none;
+    color: white;
+}
+
+#hide{
+    display: none;
+}
+
+
+/*==================================
+    end	controls style
+==================================*/

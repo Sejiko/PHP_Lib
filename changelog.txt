@@ -1,0 +1,84 @@
+<<--------MAIN-------->>
+
+define.php <--
+	18.10.17 - 10:45
+	@version 1.2.0
+	added: 
+		MODULES_PATH
+		MODULES (Array)
+-->
+
+debug.php <--
+	18.10.17 - 10:55
+	@version 1.5.1
+	added:
+		debug Option
+			requireDir
+-->
+
+utils.php <--
+	18.10.17 - 11:00
+	@version 1.5.0
+	added:
+		requireDir()
+	changed:
+		includeDir(option include_once)
+-->
+
+init_lib.php <--
+	18.10.17 - 11:05
+	@version 1.2.0
+	changed:
+		include to require_once
+		includeDir to requireDir(_once = true)
+-->    
+
+functions.php <--
+	18.10.17 - 11:15
+	@version 1.10.0
+	added:
+		getModules()
+-->
+
+file_handler.php <--
+	18.10.17 - 11:10
+	@version 1.3.1
+	BUGfix:
+		getDirNames()
+			return (str) to return (arr)
+-->
+
+functions.php <--
+	18.10.17 - 11:35
+	@version 1.11.3
+	added:
+		getModuleFiles()
+
+	BUGfix:
+		getModules()
+			$dirs (path errors)
+-->
+
+functions.php <--
+	18.10.17 - 12:35
+	@version 1.12.0
+	changed:
+		getModuleFiles($moduleName optional)
+-->
+
+module_handler.php <--
+	18.10.17 - 13:00
+	@version 0.0.1
+		created
+-->
+
+functions.php <--
+	18.10.17 - 15:45
+	@version 1.12.0
+	removed:
+		getModules()
+		getModuleFiles()
+-->
+
+<<--------MODULES-------->>
+

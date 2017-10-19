@@ -1,0 +1,23 @@
+TODO PHP Lib
+	Rewrite MODULES
+		add:
+			files
+			isUsable (check init_*_module.php)
+	handlers
+		DataBase (Module)
+		Html (Module)
+			Generate Elements
+	
+Live Code Preview
+
+TODO List
+	Live Preview
+	Generate PDF
+	
+Changelog
+	Live Preview
+	Generate PDF
+
+License
+	Live Preview
+	PDF
